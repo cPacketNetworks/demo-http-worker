@@ -1,4 +1,8 @@
 # demo-http-worker
 docker curl to generate traffic for demos
-## Usage 
-```/bin/sh /app/http_get.sh http://192.168.101.1```
+
+## build
+```make```
+
+## run 
+```docker run /bin/sh /app/http_get.sh```
