@@ -5,4 +5,4 @@ docker curl to generate traffic for demos
 ```make```
 
 ## run 
-```docker run -e CURL_CMD="-s http://www.yahoo.com" demo-http_worker /bin/sh /app/http_get.sh```
+```docker run -e URL="http://www.yahoo.com" demo-http_worker```
