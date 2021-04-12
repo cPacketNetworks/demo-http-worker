@@ -6,7 +6,7 @@ demo-http_worker:
 	docker build --tag demo-http_worker .
 
 run-interactive:
-	docker run --cap-add=NET_ADMIN -e URL=https://www.google.com -it demo-http_worker /bin/bash
+	docker run -e URL=https://www.google.com -it demo-http_worker /bin/bash
 
 run:
 	docker run --cap-add=NET_ADMIN -e URL=https://www.google.com demo-http_worker
