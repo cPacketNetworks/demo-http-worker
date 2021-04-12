@@ -8,13 +8,13 @@ A docker curl to generate traffic for demos. Supports adding random loss and lat
 See Makefile for more examples
 ```
 run:
-	docker run --cap-add=NET_ADMIN -e URL=https:/www.google.com demo-http_worker
+	docker run --cap-add=NET_ADMIN -e URL=https://www.google.com demo-http_worker
 
 run-loss:
-	docker run --cap-add=NET_ADMIN -e URL=https:/www.google.com -e TC_LOSS="10%" demo-http_worker
+	docker run --cap-add=NET_ADMIN -e URL=https://www.google.com -e TC_LOSS="10%" demo-http_worker
 
 run-delay:
-	docker run --cap-add=NET_ADMIN -e URL=https:/www.google.com -e TC_DELAY="50ms" demo-http_worker
+	docker run --cap-add=NET_ADMIN -e URL=https://www.google.com -e TC_DELAY="50ms" demo-http_worker
  ```
  or 
 ```make run```
